@@ -12,25 +12,25 @@ import com.msaitodev.core.common.ui.AppColors
 
 private val LightColorScheme = lightColorScheme(
     primary = BluePrimary,
-    secondary = BlueSecondary,
+    secondary = Color(0xFFD1E4FF),
     tertiary = BlueTertiary,
     background = LightBlueBackground,
     surface = LightBlueBackground,
     onPrimary = Color.White,
-    onSecondary = Color.White,
+    onSecondary = Color(0xFF0D47A1),
     onTertiary = Color.Black,
-    onBackground = Color(0xFF0D47A1), // 濃い青
+    onBackground = Color(0xFF0D47A1),
     onSurface = Color(0xFF0D47A1),
 )
 
 private val DarkColorScheme = darkColorScheme(
     primary = BluePrimaryDark,
-    secondary = BlueSecondaryDark,
+    secondary = Color(0xFF00497D),
     tertiary = BlueTertiaryDark,
     background = Color(0xFF121212),
     surface = Color(0xFF121212),
     onPrimary = Color.White,
-    onSecondary = Color.White,
+    onSecondary = Color(0xFFD1E4FF),
     onTertiary = Color.White,
     onBackground = Color.White,
     onSurface = Color.White,
@@ -38,20 +38,20 @@ private val DarkColorScheme = darkColorScheme(
 
 // アプリケーション用のセマンティックカラー定義（ライトモード用）
 private val LightAppColors = AppColors(
-    correctBorder = Color(0xFF2F855A),
-    correctBackground = Color(0xFFDFF5E1),
+    correctBorder = Color(0xFF1976D2),
+    correctBackground = Color(0xFFE3F2FD),
     wrongBorder = Color(0xFFC53030),
     wrongBackground = Color(0xFFFFE0E0),
-    selectedBackground = Color(0xFFE5E5E5)
+    selectedBackground = Color(0xFFD1E4FF)
 )
 
 // アプリケーション用のセマンティックカラー定義（ダークモード用）
 private val DarkAppColors = AppColors(
-    correctBorder = Color(0xFF48BB78),
-    correctBackground = Color(0xFF1C4532),
+    correctBorder = Color(0xFF42A5F5),
+    correctBackground = Color(0xFF0D47A1),
     wrongBorder = Color(0xFFF56565),
     wrongBackground = Color(0xFF652B19),
-    selectedBackground = Color(0xFF4A5568)
+    selectedBackground = Color(0xFF00497D)
 )
 
 @Composable

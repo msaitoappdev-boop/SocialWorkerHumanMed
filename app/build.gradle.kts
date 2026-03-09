@@ -57,7 +57,7 @@ android {
             )
 
             val appId = localProps.getProperty("admob.app.id")
-                ?: "ca-app-pub-2149916445602223~3292882590"
+                ?: "ca-app-pub-2149916445602223~4148527630"
             manifestPlaceholders["admob_app_id"] = appId
             signingConfig = signingConfigs.getByName("release")
         }

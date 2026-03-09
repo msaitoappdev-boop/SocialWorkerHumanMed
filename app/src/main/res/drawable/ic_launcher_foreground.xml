@@ -6,7 +6,7 @@
 
     <!--
         Foreground Layer for Adaptive Icon.
-        The background color (#A5D6A7) is provided by ic_launcher_background.xml.
+        The background color (#1976D2) is provided by ic_launcher_background.xml.
         This layer only contains the white quiz icon symbol.
     -->
     <group
