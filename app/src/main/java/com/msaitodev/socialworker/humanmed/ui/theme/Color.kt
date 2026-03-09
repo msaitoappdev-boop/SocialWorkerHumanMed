@@ -2,11 +2,12 @@ package com.msaitodev.socialworker.humanmed.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val GreenPrimary = Color(0xFF4CAF50)
-val GreenSecondary = Color(0xFF81C784)
-val GreenTertiary = Color(0xFFB9F6CA)
-val LightGreenBackground = Color(0xFFF1F8E9)
+// 社会福祉士向け：誠実さと安心感のある青系カラー
+val BluePrimary = Color(0xFF1976D2)
+val BlueSecondary = Color(0xFF42A5F5)
+val BlueTertiary = Color(0xFF90CAF9)
+val LightBlueBackground = Color(0xFFE3F2FD)
 
-val GreenPrimaryDark = Color(0xFF388E3C)
-val GreenSecondaryDark = Color(0xFF66BB6A)
-val GreenTertiaryDark = Color(0xFF00C853)
+val BluePrimaryDark = Color(0xFF1565C0)
+val BlueSecondaryDark = Color(0xFF1E88E5)
+val BlueTertiaryDark = Color(0xFF42A5F5)
