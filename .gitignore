@@ -4,8 +4,6 @@
 **/build/
 .idea/
 *.iml
-*.aab
-*.apk
 /app/release/
 
 # 機密・環境依存
