@@ -29,8 +29,8 @@ android {
         applicationId = "com.msaitodev.socialworker.humanmed"
         minSdk = 24
         targetSdk = 35
-        versionCode = 7
-        versionName = "1.0.0"
+        versionCode = 10
+        versionName = "1.1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
