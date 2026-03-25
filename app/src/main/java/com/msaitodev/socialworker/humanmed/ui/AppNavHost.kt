@@ -75,7 +75,7 @@ internal fun AppNavHost(
 
     val isPremium by premiumRepo.isPremium.collectAsState(initial = true)
     
-    // Œ»İ‚Ì‰æ–Êî•ñ‚ğŠÄ‹
+    // ç¾åœ¨ã®ç”»é¢æƒ…å ±ã‚’ç›£è¦–
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
@@ -99,7 +99,7 @@ internal fun AppNavHost(
 
     NavHost(navController, startDestination = HomeDestination.route) {
         composable(HomeDestination.route) {
-            // ƒz[ƒ€‰æ–Ê‚ª•\¦‚³‚ê‚é‚½‚Ñ‚Éi–ß‚Á‚Ä‚«‚½‚àŠÜ‚Şjƒqƒ“ƒg‚ğ’Š‘I‚·‚é
+            // ãƒ›ãƒ¼ãƒ ç”»é¢ãŒè¡¨ç¤ºã•ã‚Œã‚‹ãŸã³ã«ï¼ˆæˆ»ã£ã¦ããŸæ™‚ã‚‚å«ã‚€ï¼‰ãƒ’ãƒ³ãƒˆã‚’æŠ½é¸ã™ã‚‹
             var currentHint by remember { mutableStateOf("") }
             
             LaunchedEffect(currentRoute, isPremium) {
@@ -110,7 +110,7 @@ internal fun AppNavHost(
                     if (rawJson.isNotEmpty()) {
                         currentHint = try {
                             val hints = Json.decodeFromString<List<String>>(rawJson)
-                            // ƒVƒƒƒbƒtƒ‹‚µ‚Äæ“ª‚ğæ‚é‚±‚Æ‚Åƒ‰ƒ“ƒ_ƒ€«‚ğ‚‚ß‚é
+                            // ã‚·ãƒ£ãƒƒãƒ•ãƒ«ã—ã¦å…ˆé ­ã‚’å–ã‚‹ã“ã¨ã§ãƒ©ãƒ³ãƒ€ãƒ æ€§ã‚’é«˜ã‚ã‚‹
                             hints.shuffled().firstOrNull() ?: ""
                         } catch (e: Exception) {
                             rawJson
